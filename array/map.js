@@ -21,7 +21,7 @@ const doubleElementsInArray = (arr) => {
 };
 
 const result = doubleElementsInArray([1, 2, 3, 4, 5]);
-console.log(result);
+console.log(result); // [2, 4, 6, 8, 10]
 
 // Input: [{ name: "John", age: 25 }, { name: "Jane", age: 30 }, { name: "Jim", age: 35 }]
 // Output: ["John", "Jane", "Jim"]
