@@ -58,3 +58,29 @@ function logger() {
 
 const buttonNode = document.querySelector("#click_me_button");
 buttonNode.onclick = logger;
+
+const redBox = document.querySelector(".red-box");
+const greenBox = document.querySelector(".green-box");
+const yellowBox = document.querySelector(".yellow-box");
+
+redBox.addEventListener("click", () => console.log("Red box clicked"), true);
+
+// We can add multiple event listeners to the same element
+// redBox.addEventListener("click", () => console.log("Red box clicked callback 2"));
+
+redBox.addEventListener("click", () => console.log("Red box capture"), true);
+redBox.addEventListener("click", () => console.log("Red box bubble"));
+
+greenBox.addEventListener(
+  "click",
+  () => console.log("Green box capture"),
+  true
+);
+greenBox.addEventListener("click", () => console.log("Green box bubble"));
+
+yellowBox.addEventListener(
+  "click",
+  () => console.log("Yellow box capture"),
+  true
+);
+yellowBox.addEventListener("click", () => console.log("Yellow box bubble"));

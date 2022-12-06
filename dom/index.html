@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script async src="code.js"></script>
+
+    <style>
+      .red-box {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+
+        display: grid;
+        place-items: center;
+      }
+
+      .green-box {
+        width: 300px;
+        height: 300px;
+        background-color: green;
+
+        display: grid;
+        place-items: center;
+      }
+
+      .yellow-box {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
     <h1 id="heading_id" class="heading-class" data-tag="heading">Bye</h1>
@@ -16,5 +42,11 @@
     <div id="list_container"></div>
 
     <button id="click_me_button">Click Me!</button>
+
+    <div class="red-box">
+      <div class="green-box">
+        <div class="yellow-box"></div>
+      </div>
+    </div>
   </body>
 </html>
