@@ -8,13 +8,19 @@
     <script async src="code.js"></script>
 
     <style>
-      .red-box {
+      .red-box,
+      .moving-box {
         width: 500px;
         height: 500px;
         background-color: red;
 
         display: grid;
         place-items: center;
+      }
+
+      .moving-box {
+        margin: 5px;
+        transform: translateX(0);
       }
 
       .green-box {
@@ -48,5 +54,7 @@
         <div class="yellow-box"></div>
       </div>
     </div>
+
+    <div class="moving-box"></div>
   </body>
 </html>

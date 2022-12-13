@@ -84,3 +84,12 @@ yellowBox.addEventListener(
   true
 );
 yellowBox.addEventListener("click", () => console.log("Yellow box bubble"));
+
+// JS animation
+const movingBox = document.querySelector(".moving-box");
+let currentXOffset = 0;
+
+setInterval(() => {
+  currentXOffset += 1;
+  movingBox.style.transform = `translateX(${currentXOffset}px)`;
+}, 200);
